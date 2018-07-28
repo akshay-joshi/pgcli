@@ -148,7 +148,8 @@ def after_scenario(context, _):
         context.cli.sendcontrol('d')
         context.cli.expect_exact(pexpect.EOF, timeout=10)
 
-# TODO: uncomment to debug a failure
+
+# # TODO: uncomment to debug a failure
 # def after_step(context, step):
 #     if step.status == "failed":
-#         import ipdb; ipdb.set_trace()
+#         import pdb; pdb.set_trace()
